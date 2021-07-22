@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>COVID-HELP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/provided.css" />
+        <script type="text/javascript" src="src/login.js"></script>
+        <!-- import bootstrap -->
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+<body class="text-center">
+    <header class="banner">
+        <br>
+    </header>
+    <main role="main" class="container-main ">
+        <!-- login webpage-->
+        <form name="loginIn"  id="loginForm">
+            <fieldset>
+                <h1>Welcome to COVID HELP WEBSITE, Please Login</h1>
+                User Name <input type="text" name="username" size="30" oninput="checkName(loginIn)"><br><span id="nameHint"></span><br>
+                Password <input type="password" name="password" size="30" oninput="checkPass(loginIn)"><br><span id="passHint"></span><br>
+                <input type="button" name="submit" value="login in" class="btn btn-info" onclick="submitLoginButton()">
+                <input type="button" name="signUp" value="sign-up" class="btn btn-info" onclick="showignUpButton()">
+            </fieldset>
+        </form>
+        <!-- signup webpage-->
+        <form name="signUp" id="signForm">
+            <fieldset>
+                <h1>Please Sign up</h1>
+                User_Name <input type="text" name="usernameSign" size="30" oninput="checkNameSign(signUp)"><br><span id="nameHintSign"></span><br>
+                Password <input type="password" name="passwordSign" size="30" oninput="checkPassSign(signUp)"><br><span id="passHintSign"></span><br>
+                Confirm password <input type="password" name="confirmPassword" size="30" oninput="checkConfirm()"><br><span id="confirmPass"></span><br>
+                E-mail <input type="email" name="emailSign" size="30" ><br><span id="emailSign"></span><br>
+                Name <input type="text" name="nameSign" size="30" oninput="checkNickName(signUp)"><br><span id="necknameSign"></span><br>
+                <input type="button" name="submitSignup" value="submit" onclick="submitSignButton()" class="btn btn-info">
+                <input type="button" name="cancel" value="cancel" onclick="cancelSignUp()" class="btn btn-info">
+            </fieldset>
+        </form>
+
+
+        <!-- Login In part -->
+        <script type="text/javascript" src="src/login.js" id="loginJs"></script>
+        <!-- sign up part -->
+        <script type="text/javascript" src="src/signup.js"></script>
+
+        <script type="text/javascript" src="src/main.js"></script>
+    </main>
+    <footer>
+        <p>&copy; COVID HELP 2021</p>
+    </footer>
+
+</body>
+</html>
